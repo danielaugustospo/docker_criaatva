@@ -5,17 +5,17 @@ Para facilitar o desenvolvimento, adicionei o projeto no Docker, entretanto, a p
 
 Criei esta imagem com o PHP 7.3.33 + MySQL e PHPMyAdmin
 
-# Comandos para levantar e/ou parar os containeres
-# Criar e levantar os containers
+**Comandos para levantar e/ou parar os containeres**
+**Criar e levantar os containers**
 docker-compose up -d
 
-# Iniciar o container Docker
+**Iniciar o container Docker**
 docker-compose start
 
-# Parar o container Docker
+**Parar o container Docker**
 docker-compose stop
 
-# Parar e remover containers da máquina
+**Parar e remover containers da máquina**
 docker-compose down
 
 **Acesso localhost**
@@ -36,7 +36,6 @@ senha: root
 
 
 php artisan make:migration create_users_table --create=users
-php artisan make:migration add_votes_to_users_table --table=users
 
 Foi criado um link simbólico para a pasta storage em public. Para gerar esse comando no servidor, execute:
 
